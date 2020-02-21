@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+
+  render() {
+    return (
+      <div className="game-area">
+
+        <div className="snake-dot" style={{ left: 0, top: 0 }}></div>
+        <div className="snake-dot" style={{ left: '2%', top: 0 }}></div>
+        <div className="snake-dot" style={{ left: '4%', top: 0 }}></div>
+        <div className="snake-dot" style={{ left: '6%', top: 0 }}></div>
+
+      </div>
+    );
+  }
+
 }
 
 export default App;

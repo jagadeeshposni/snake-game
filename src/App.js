@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import Snake from './Snake';
 
 class App extends Component {
 
+  state = {
+    snakeDots : [[0,0],[2,0],[4,0]]
+  }
 
   render() {
     return (
       <div className="game-area">
-
-        <div className="snake-dot" style={{ left: 0, top: 0 }}></div>
-        <div className="snake-dot" style={{ left: '2%', top: 0 }}></div>
-        <div className="snake-dot" style={{ left: '4%', top: 0 }}></div>
-        <div className="snake-dot" style={{ left: '6%', top: 0 }}></div>
-
+        <Snake snakeDots={this.state.snakeDots}></Snake>
       </div>
     );
   }
